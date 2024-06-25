@@ -1,0 +1,19 @@
+
+#DB schema
+
+server:
+  port: 8080
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bank_account_db
+    username: postgres
+    password: admin
+    driverClassName: org.postgresql.Driver
+  sql:
+    init:
+      platform: postgres
